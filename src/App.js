@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import { FiberManualRecord, Stop } from '@mui/icons-material';
+import { CircularProgress } from '@mui/material';
+import { useState } from 'react';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import './App.css';
+import ChatGPT from './components/ChatGPT';
 
 function App() {
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState('');
+  const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition
+  } = useSpeechRecognition();
+
+  if (!browserSupportsSpeechRecognition) {
+    return <span>Browser doesn't support speech recognition.</span>;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h1>ChatGPT Voice Recognition</h1>
+      <div className="buttons_container">
+        <button className='micStart' onClick={SpeechRecognition.startListening} style={{ background: listening ? '#e3bfbc' : '#9db0b8' }}><FiberManualRecord style={{ color: 'red' }}/></button>
+        <button className='micStop' onClick={SpeechRecognition.stopListening}><Stop/></button>
+        <ChatGPT 
+          transcript={transcript} 
+          listening={listening}   
+          resetTranscript={resetTranscript} 
+          setLoading={setLoading} 
+          message={message} 
+          setMessage={setMessage}
+        />
+      </div>
+      {loading && <CircularProgress/>}
+      <span>{message}</span>
+    </main>
   );
 }
 
