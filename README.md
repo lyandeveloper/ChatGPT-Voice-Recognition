@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<h1 align="center">
+  ChatGPT Voice Recognition
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lyandeveloper/ChatGPT-Voice-Recognition">
+  
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/top/lyandeveloper/ChatGPT-Voice-Recognition">
 
-## Available Scripts
+  <a href="https://github.com/lyandeveloper/ChatGPT-Voice-Recognition/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lyandeveloper/ChatGPT-Voice-Recognition">
+  </a>
 
-In the project directory, you can run:
+  <a href="https://github.com/lyandeveloper/ChatGPT-Voice-Recognition/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/lyandeveloper/ChatGPT-Voice-Recognition">
+  </a>
 
-### `yarn start`
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  
+  <a href="https://github.com/lyandeveloper/">
+    <img alt="Author" src="https://img.shields.io/badge/author-Elian%20Campos-blue">
+  </a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-it-works">How it works</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+  <a href="#arrow_forward-how-to-run">How to run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `yarn test`
+## 💻 Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ChatGPT Voice Recognition is a basic project where you speak and GPT will bring to you the answers and speaks too.<br>
 
-### `yarn build`
+<img src=".github/print.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How it works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Click in the record button to turn on the microfone and stop to turn off.<br/> 
+When you stop to talk the microphone will automatically stop, but if don't just click in the stop button.<br/>
+The reset button will reset everything include the GPT voice and message. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technology
 
-### `yarn eject`
+This project was developed with the following technologies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](reactjs.org)
+- [ChatGPT API](https://openai.com/blog/chatgpt)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :arrow_forward: How to run
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Just create an account in openAI and generate an API KEY. Copy and past in the project in a .env file.
+- Open your terminal and start the project with yarn start or npm run start.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made By ♥ [Elian Campos](https://github.com/lyandeveloper). Add me on [LinkedIn](https://www.linkedin.com/in/elian-campos/) :wave:
